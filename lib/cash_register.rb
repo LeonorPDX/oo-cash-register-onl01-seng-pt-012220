@@ -12,7 +12,7 @@ class CashRegister
   end
   
   def apply_discount
-    @discount = @discount.to
+    @discount = @discount/100.to_f
   end
   
 end
