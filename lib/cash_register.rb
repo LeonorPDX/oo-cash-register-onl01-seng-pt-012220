@@ -12,7 +12,11 @@ class CashRegister
   end
   
   def apply_discount
-    
+    if @discount = nil
+      @total
+    else
+      @total = @total - (@discount*@total)
+    end
     
   end
   
