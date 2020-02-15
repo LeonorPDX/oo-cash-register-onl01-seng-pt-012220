@@ -12,7 +12,11 @@ class CashRegister
   end
   
   def apply_discount
-    @discount = @discount/100.to_f
+    if @discount != nil
+       @discount = @discount/100.to_f
+    else
+      
+    end
   end
   
 end
