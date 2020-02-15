@@ -14,8 +14,10 @@ class CashRegister
   def apply_discount
     if @discount != nil
        @discount = @discount/100.to_f
+       @total = @total * @discount
+       puts 
     else
-      
+      puts "There is no discount to apply."
     end
   end
   
