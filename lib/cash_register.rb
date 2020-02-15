@@ -1,7 +1,7 @@
 class CashRegister
   attr_accessor :total, :discount, :last_transaction, :discount_total
   
-  def initialize(discount = nil)
+  def initialize(discount = 0)
     @total = 0
     @discount = discount
   end
@@ -12,7 +12,7 @@ class CashRegister
   end
   
   def apply_discount
-    if @discount != nil
+    if @discount > 0
        @discount = @discount/100.to_f
        @total = @total * @discount
        puts "After the discount, the total comes to #{@total}."
