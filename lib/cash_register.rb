@@ -15,7 +15,7 @@ class CashRegister
     if @discount = nil
       @total
     else
-      @total = @total - (@discount*@total)
+      @discount.
     end
     
   end
